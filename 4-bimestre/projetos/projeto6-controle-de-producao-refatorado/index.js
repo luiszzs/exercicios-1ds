@@ -3,11 +3,10 @@ const prompt = require("prompt-sync")()
 
 console.log("Bem-vindo a TechFactory")
 console.log("Aqui nós realizamos um relatório completo da produção diária")
-let dias = 0 
+
 let producao = []
 let total = 0
 
-dias++
 let quantosDias = (parseInt(prompt("Quantos dias deseja simular? ")))
 for(let i = 0; i < quantosDias; i++){
     producao.push(parseInt(prompt(`Digite a quantidade produzida no dia ${i + 1}:`)))
@@ -30,7 +29,7 @@ for(let maiorOuMenor = 1; maiorOuMenor < producao.length; maiorOuMenor++){
  let mediaDeProducao = total / producao.length
 
 console.log(`
---- Relatórioo de produção ---
+--- Relatório de produção ---
 Produções registradas: ${producao}
 Total produzido: ${total}
 Média diária: ${mediaDeProducao}
