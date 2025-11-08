@@ -3,7 +3,7 @@ function boasVindas(){
     return "Bem-vindo(a) ao sistema!"
 }
 
-function soma (a, b){
+ function soma (a, b){
     return a + b
 }
 
