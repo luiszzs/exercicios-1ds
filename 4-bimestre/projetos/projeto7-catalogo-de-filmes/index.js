@@ -21,13 +21,13 @@ let filme4 = {
     titulo: "Batman: Cavaleiro Das Trevas Part. 1 (Animação)",
     genero: "Ação/Crime",
     ano: 2016 ,
-    avaliacao: 10.0
+    avaliacao: 9.9
 }
 let filme5 = {
     titulo: "Batman: Cavaleiro Das Trevas Part. 2 (Animação)",
     genero: "Ação/Crime",
     ano: 2017,
-    avaliacao: 10.0
+    avaliacao: 9.9
 }
 let filme6 = {
     titulo: "Batman e o Longo Dia Das Bruxas Part. 1",
@@ -62,7 +62,6 @@ let filme10 = {
 
 let filme = [filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10]
 
-let avaliacaoMaior = filme[0]
 let soma = 0 
 for(let i = 0; i < filme.length; i++){
     soma += filme[i].avaliacao
@@ -71,7 +70,7 @@ for(let i = 0; i < filme.length; i++){
     console.log(i + 1, filme[i].titulo )
 }
 let media = soma / filme.length
-console.log(`Filme mais bem avaliado:` )
+console.log("Filme mais bem avaliado: " + filme9.ano )
 console.log(`Média geral das avaliações: ${media.toFixed(2)}`)
 // === NÃO MODIFIQUE OU ADICIONE NADA ABAIXO ============
 module.exports = { filme1, filme2, filme3, filme4, filme5, filme6, filme7, filme8, filme9, filme10 }
